@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&family=Open+Sans:wght@300&family=Roboto:wght@100;300;400;700&family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/amity-jack');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 1;
+}
+
+.logo {
+    /* color: rgb(11, 106, 230); */
+    color: rgb(85, 128, 205);
+    flex: 20%;
+    /* border: 1px solid red; */
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Amity Jack', sans-serif;
+    font-size: 22px;
+    margin-left: 10%;
+}
+
+.menu {
+    flex: 70%;
+    /* border: 1px solid blue; */
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    padding: 20px 16px;
+    font-size: 20px;
+    color: rgb(85, 128, 205);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: RGB(200, 0, 0);
+    border-top: 4px solid rgb(85, 128, 205);
+}
+
+#btn {
+    background-color: rgb(85, 128, 205);
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#btn:hover {
+    border: none;
+    background-color: RGB(200, 0, 0);
+    transition: 200ms;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    /* background: rgb(233, 233, 233); */
+    padding-top: 100px;
+}
+
+img {
+    width: 110%;
+
+}
+
+.img-conteudo {
+    margin-right: 10%;
+    flex: 40%;
+    position: relative;
+    bottom: 50px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 10%;
+    flex: 40%;
+    padding-bottom: 10%;
+    font-size: 15px;
+    color: rgb(85, 128, 205);
+
+
+
+}
+
+.conteudo h2 {
+    font-size: 40px;
+    text-align: left;
+}
+
+.conteudo p {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: gray;
+}
+
+.contato-btn {
+    display: inline-block;
+    background-color: RGB(200, 0, 0);
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contato-btn:hover {
+    background-color: rgb(85, 128, 205);
+    transition: 200ms;
+}
+
+
+section {
+    display: inline-block;
+    margin-top: -20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    text-align: center;
+    padding: 5%;
+
+}
+
+
+section h2 {
+    width: 100%;
+    font-size: 40px;
+    margin: 0;
+    font-family: 'Amity Jack', sans-serif;
+    font-weight: bold;
+    color: rgb(85, 128, 205);
+    text-transform: none;
+
+}
+
+.acoes {
+    display: inline-block;
+    margin-top: 5%;
+
+}
+
+.card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    /* border: 1px solid red; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+.card-hover {
+    display: none;
+}
+
+.card:hover {
+    color: white;
+    background-color: RGB(200, 0, 0);
+    padding: 50px;
+}
+
+.card:hover .icon {
+    display: none;
+}
+
+.card:hover .card-text {
+    display: none;
+}
+
+.card:hover .card-hover {
+    display: block;
+}
+
+footer {
+
+    margin-top: 100px;
+    background-image: linear-gradient(180deg, rgb(36, 64, 117), rgb(33, 58, 105), black);
+    text-align: center;
+    border-top: 5px solid rgb(85, 128, 205);
+}
+
+.logo-rodape {
+    padding: 100px;
+
+}
+
+.logo-rodape h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Amity Jack', sans-serif;
+    color: rgba(253, 253, 253, 0.918);
+}
+
+.zap {
+    width: 5%;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1071px) {
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+        box-shadow: none;
+    }
+
+    .logo {
+        margin: 0;
+        text-align: center;
+    }
+
+    header {
+        padding-top: 50px;
+    }
+
+    .conteudo {
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    .conteudo p {
+        text-align: center;
+    }
+
+    .img-conteudo {
+        flex: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .zap {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    footer {
+        height: auto;
+    }
+}
